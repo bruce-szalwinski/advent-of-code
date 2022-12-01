@@ -1,9 +1,9 @@
 #!/bin/bash
 
-awk -v RS= '{print > ("whatever-" NR ".txt")}' input1
+awk -v RS= '{print > ("elf-" NR ".txt")}' input1
 
 calories_by_elf() {
-  for i in $(ls whatever*)
+  for i in $(ls elf*)
   do
     calories=$(cat $i | paste -sd+ -|bc)
     echo $i $calories
