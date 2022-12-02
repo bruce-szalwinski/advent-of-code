@@ -1,0 +1,13 @@
+# A - Rock , B - Paper, C - Scissors
+# X - Rock , Y - Paper, Z - Scissors
+# 6 points for win, 3 for draw, 0 for tie +
+# 1 point if playing rock, 2 if playing paper, 3 if playing scissors
+4 AX
+8 AY
+3 AZ
+1 BX
+5 BY
+9 BZ
+7 CX
+2 CY
+6 CZ

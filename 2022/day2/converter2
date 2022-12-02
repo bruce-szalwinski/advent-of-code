@@ -1,0 +1,14 @@
+# X now means lose, Y means draw, Z means win
+# A still means Rock, B means Paper, C means Scissors
+# When A is shown and we have X, what must we play to lose?  Z - Scissors
+# so this table is used to replace all AX's with AZ's
+# and so on
+AZ AX
+AX AY
+AY AZ
+BX BX
+BY BY
+BZ BZ
+CY CX
+CZ CY
+CX CZ
