@@ -20,7 +20,7 @@ def part1():
         )
 
         sum_of_priorities += list(priorities).index(common) + 1
-    print(sum_of_priorities)
+    return sum_of_priorities
 
 
 def part2():
@@ -42,11 +42,10 @@ def part2():
         common = ''.join(set(g[0]).intersection(g[1]).intersection(g[2]))
         sum_of_priorities += list(priorities).index(common) + 1
 
-    print(sum_of_priorities)
-
+    return sum_of_priorities
 
 
 if __name__ == '__main__':
-    #part1()
-    part2()
+    print(part1())
+    print(part2())
 
