@@ -24,11 +24,10 @@ def part1():
 
 
 def part2():
-    groups = chunked(rucksacks(), 3)
-    return sum([list(priorities).index(''.join(set(g[0]).intersection(g[1]).intersection(g[2]))) for g in groups])
+    return sum([list(priorities).index(''.join(set(g[0]).intersection(g[1]).intersection(g[2]))) for g in
+                chunked(rucksacks(), 3)])
 
 
 if __name__ == '__main__':
     print(part1())
     print(part2())
-
