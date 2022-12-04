@@ -13,9 +13,9 @@ def test_to_set():
 
 
 def test_is_superset():
-    # assert is_superset(to_set("2-8"), to_set("3-7")) is True
-    # assert is_superset(to_set("2-4"), to_set("6-8")) is False
-    # assert is_superset(to_set("5-7"), to_set("7-9")) is False
+    assert is_superset(to_set("2-8"), to_set("3-7")) is True
+    assert is_superset(to_set("2-4"), to_set("6-8")) is False
+    assert is_superset(to_set("5-7"), to_set("7-9")) is False
     assert is_superset(to_set("6-6"), to_set("4-6")) is True
     assert is_superset(to_set("64-64"), to_set("12-63")) is False
 
