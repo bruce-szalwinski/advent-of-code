@@ -12,7 +12,7 @@ def init_stacks():
 ]
 
 
-def instructions():
+def read_directions():
     with open("input") as file:
         lines = file.readlines()
         return [i.rstrip().split(" ") for i in lines]
@@ -36,7 +36,7 @@ def relocate_9001(from_stack:list, to_stack: list, num_crates):
 
 
 def part1():
-    directions = instructions()
+    directions = read_directions()
     stacks = init_stacks()
     for d in directions:
         num_crates = int(d[1])
@@ -49,7 +49,7 @@ def part1():
 
 
 def part2():
-    directions = instructions()
+    directions = read_directions()
     stacks = init_stacks()
 
     for d in directions:
