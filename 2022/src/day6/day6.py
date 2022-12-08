@@ -7,11 +7,9 @@ def read_input():
 
 
 def find_marker(dstream: str, unique_characters):
-    i = 0
     for w in windowed(dstream, unique_characters):
         if len(set(w)) == unique_characters:
-            return i+unique_characters
-        i += 1
+            return dstream.index(''.join(w)) + unique_characters
 
 
 def find_start_of_packet(dstream: str):
